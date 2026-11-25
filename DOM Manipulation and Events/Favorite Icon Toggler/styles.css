@@ -1,0 +1,41 @@
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  width: 280px;
+}
+
+.item-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.favorite-icon {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #555;
+  transition: transform 0.15s ease;
+}
+
+.favorite-icon:hover {
+  transform: scale(1.15);
+}
+
+.filled {
+  color: #e63946;
+}
