@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightbox Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Exhibition Gallery</h1>
+      <p>Select any painting to inspect it in full view</p>
+    </header>
+
+    <div class="gallery">
+      <img
+        class="gallery-item"
+        src="https://cdn.freecodecamp.org/curriculum/labs/stonehenge-thumbnail.jpg"
+        alt="Watercolor painting of Stonehenge"
+      >
+      <img
+        class="gallery-item"
+        src="https://cdn.freecodecamp.org/curriculum/labs/storm-thumbnail.jpg"
+        alt="Painting of a mountain snowstorm at Mont Cenis"
+      >
+      <img
+        class="gallery-item"
+        src="https://cdn.freecodecamp.org/curriculum/labs/trees-thumbnail.jpg"
+        alt="Pastoral landscape painting with sheep and trees"
+      >
+    </div>
+
+    <div class="lightbox">
+      <button id="close-btn" aria-label="Close full-size image">&times;</button>
+      <img id="lightbox-image" src="" alt="Enlarged artwork">
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
