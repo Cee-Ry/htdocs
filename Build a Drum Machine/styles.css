@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121417;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #f4f4f5;
+}
+
+#drum-machine {
+  background-color: #1e2229;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  border: 1px solid #2e3440;
+}
+
+#pad-bank {
+  display: grid;
+  grid-template-columns: repeat(3, 85px);
+  gap: 12px;
+}
+
+.drum-pad {
+  height: 85px;
+  background-color: #2b303b;
+  color: #ffffff;
+  border: 2px solid #3b4252;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.06s ease, background-color 0.08s ease, border-color 0.08s ease;
+  box-shadow: 0 4px 0 #15181e;
+}
+
+.drum-pad:hover {
+  background-color: #343b48;
+}
+
+.drum-pad:active,
+.drum-pad.active {
+  transform: translateY(3px);
+  background-color: #ff7a00;
+  border-color: #ff9e44;
+  color: #121417;
+  box-shadow: 0 1px 0 #15181e;
+}
+
+#display {
+  width: 100%;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  background-color: #121417;
+  border: 1px solid #3b4252;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #ff9e44;
+  min-height: 2.8rem;
+}
