@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  transition: background 0.3s, color 0.3s;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+#theme-switcher-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #888;
+}
+
+ul {
+  margin: 10px auto;
+  padding: 0;
+  width: 160px;
+  border: 1px solid #888;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+li:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+#status {
+  text-align: center;
+  min-height: 20px;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+/* Theme Classes */
+body.theme-light {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+body.theme-dark {
+  background-color: #1a1b1e;
+  color: #f1f3f5;
+}
+
+body.theme-ocean {
+  background-color: #0b3954;
+  color: #e0fbfc;
+}
